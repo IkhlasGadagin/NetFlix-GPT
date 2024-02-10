@@ -5,14 +5,18 @@ import { GPT_WALLPAPER } from '../utils/constants'
 
 const GptSearch = () => {
   return (
-    <div>
-        <div className='absolute -z-10'>
-      <img alt='net-logo' src={GPT_WALLPAPER}/>
-
+    <>
+     <div className='absolute -z-10'>
+      <img className='fixed h-screen md:h-auto ' alt='net-logo' src={GPT_WALLPAPER}/>
+  
       </div>
-        <GptLongSearchingBar/>
-        <GptMovieSuggestion/>
-    </div>
+      <div className='' >
+       
+       <GptLongSearchingBar/>
+       <GptMovieSuggestion/>
+   </div>
+    </>
+   
   )
 }
 
